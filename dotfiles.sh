@@ -12,6 +12,7 @@ chsh -s $(which zsh)
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"last
 git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 sed -i "s/%c/%d/g" ~/.oh-my-zsh/themes/robbyrussell.zsh-theme
 sed -i "s/^plugins=.*$/plugins=(git history history-substring-search dircycle dirhistory fasd vi-mode last-working-dir zsh-autosuggestions zsh-syntax-highlighting)/g" ~/.zshrc
 sudo apt-get install fonts-powerline
