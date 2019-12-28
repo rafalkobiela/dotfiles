@@ -19,8 +19,8 @@ sudo apt-get install fonts-powerline
 sed -i 's/robbyrussell/powerlevel10k\/powerlevel10k/g' ~/.zshrc
 
 #make zsh history bigger
-echo "export HISTSIZE=999999999"
-echo "export SAVEHIST=$HISTSIZE"
+echo "export HISTSIZE=999999999" >> ~/.zshrc
+echo "export SAVEHIST=$HISTSIZE" >> ~/.zshrc
 
 #fzf (ctrl-R ctrl-T)
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
