@@ -18,6 +18,10 @@ sed -i "s/^plugins=.*$/plugins=(git history history-substring-search dircycle di
 sudo apt-get install fonts-powerline
 sed -i 's/robbyrussell/powerlevel10k\/powerlevel10k/g' ~/.zshrc
 
+#make zsh history bigger
+export HISTSIZE=999999999
+export SAVEHIST=$HISTSIZE
+
 #fzf (ctrl-R ctrl-T)
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
