@@ -3,6 +3,7 @@
 apt-get update && apt-get upgrade
 apt-get autoremove
 apt-get install curl
+apt-get install git
 
 #zsh
 apt-get install zsh
