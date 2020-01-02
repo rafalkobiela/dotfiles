@@ -21,7 +21,7 @@ sed -i 's/robbyrussell/powerlevel10k\/powerlevel10k/g' ~/.zshrc
 
 #make zsh history bigger
 echo "export HISTSIZE=999999999" >> ~/.zshrc
-echo "export SAVEHIST=$HISTSIZE" >> ~/.zshrc
+echo "export SAVEHIST=999999999" >> ~/.zshrc
 
 #fzf (ctrl-R ctrl-T)
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
